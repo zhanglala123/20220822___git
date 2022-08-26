@@ -1,0 +1,338 @@
+tests:
+  #case 表示测试用例名称
+- case: 1.风险分MB_优享版V3.0-MULV4DPLUS
+  #http 表示请求对象
+  http:
+    method: POST
+    path: /api/product
+    headers:
+      Content-Type: application/json
+    params:
+      instId: gy-test
+      data:
+        phone: 50a2d00b5d6cd2b4d176a6d492c2d8e2
+
+        encryptionType: md5
+        id: 6205ba4c38aa77eb6f01c30a99db9f3e
+        phoneType: phone_md5
+        idNumber: d3351227aa49e2a437f2404c53e63087
+        idNumberType: idNumber_md5
+        modelCode: 111111
+        enterprise: 融慧金科金融服务外包
+        tel: 010-52901517
+        time: 2020091513455151
+      sign: 89bb002d971d770427d6659d84e0ea1f
+      time: 2020091513455151
+      reqId: 2020091513455151-7HDD7FNDBNWLML0E
+      productId: MULV4DPLUS
+  #expected 表示预期结果
+  expected:
+    response:
+      data:
+        multiScore: null
+#        matchTag: 1
+      status: 200
+      msg: success
+
+- case: 2.风险分FR优享版V1.03-AFDQV3P1
+  #http 表示请求对象
+  http:
+    method: POST
+    path: /api/product
+    headers:
+      Content-Type: application/json
+    params:
+      instId: gy-test
+      data:
+        phone: 50a2d00b5d6cd2b4d176a6d492c2d8e2
+        encryptionType: md5
+        id: 6205ba4c38aa77eb6f01c30a99db9f3e
+        phoneType: phone_md5
+        idNumber: d3351227aa49e2a437f2404c53e63087
+        idNumberType: idNumber_md5
+        modelCode: 111111
+        enterprise: 融慧金科金融服务外包
+        tel: 010-52901517
+        time: '2020091513455151'
+      sign: 21d558c0344eb049eea6c8c0ba13271a
+      time: 2020091513455151
+      reqId: 2020091513455151-7HDD7FNDBNWLML0E
+      productId: AFDQV3P1
+  #expected 表示预期结果
+  expected:
+    response:
+      data:
+        score: null
+      status: 200
+      msg: success
+
+- case: 3.风险分HR-RISKHRV2
+  http:
+    method: POST
+    path: /api/product
+    headers:
+      Content-Type: application/json
+    params:
+      instId: gy-test
+      data:
+        phone: 50a2d00b5d6cd2b4d176a6d492c2d8e2
+        encryptionType: md5
+        id: 6205ba4c38aa77eb6f01c30a99db9f3e
+        phoneType: phone_md5
+        idNumber: d3351227aa49e2a437f2404c53e63087
+        idNumberType: idNumber_md5
+        modelCode: 111111
+        enterprise: 融慧金科金融服务外包
+        tel: 010-52901517
+        time: '2020091513455151'
+      sign: 1eb2750c485af69e28cf9cd86d16ea1a
+      time: 2020091513455151
+      reqId: 2020091513455151-7HDD7FNDBNWLML0E
+      productId: RISKHRV2
+  expected:
+    response:
+      status: 200
+      msg: success
+
+- case: 4.人群画像-OPRO
+  http:
+    method: POST
+    path: /api/product
+    headers:
+      Content-Type: application/json
+    params:
+      instId: gy-test
+      data:
+        phone: 50a2d00b5d6cd2b4d176a6d492c2d8e2
+        encryptionType: md5
+        id: 6205ba4c38aa77eb6f01c30a99db9f3e
+        phoneType: phone_md5
+        idNumber: d3351227aa49e2a437f2404c53e63087
+        idNumberType: idNumber_md5
+        modelCode: 111111
+        enterprise: 融慧金科金融服务外包
+        tel: 010-52901517
+        time: 2020091513455151
+      sign: 93a3dca42be093770d88bfa3ebcbc29a
+      time: 2020091513455151
+      reqId: 2020091513455151-7HDD7FNDBNWLML0E
+      productId: OPRO
+  expected:
+    response:
+      data:
+        wealthScore: null
+      status: 200
+      msg: success
+
+
+- case: 5.风险分FR优享版V1.04-AFDQV3P2
+  #http 表示请求对象
+  http:
+    method: POST
+    path: /api/product
+    headers:
+      Content-Type: application/json
+    params:
+      instId: gy-test
+      data:
+        phone: 50a2d00b5d6cd2b4d176a6d492c2d8e2
+        encryptionType: md5
+        id: 6205ba4c38aa77eb6f01c30a99db9f3e
+        phoneType: phone_md5
+        idNumber: d3351227aa49e2a437f2404c53e63087
+        idNumberType: idNumber_md5
+        modelCode: 111111
+        enterprise: 融慧金科金融服务外包
+        tel: 010-52901517
+        time: 2020091513455151
+      sign: 560f771a6cdf7a593dce09682807eb92
+      time: 2020091513455151
+      reqId: 2020091513455151-7HDD7FNDBNWLML0E
+      productId: AFDQV3P2
+  #expected 表示预期结果
+  expected:
+    response:
+      data:
+        score: null
+      status: 200
+      msg: success
+
+- case: 6.财富指数优享版V2.0-WEAINDEXV2
+  http:
+    method: POST
+    path: /api/product
+    headers:
+      Content-Type: application/json
+    params:
+      instId: gy-test
+      data:
+        phone: 50a2d00b5d6cd2b4d176a6d492c2d8e2
+        encryptionType: md5
+        id: 6205ba4c38aa77eb6f01c30a99db9f3e
+        phoneType: phone_md5
+        idNumber: d3351227aa49e2a437f2404c53e63087
+        idNumberType: idNumber_md5
+        modelCode: 111111
+        enterprise: 融慧金科金融服务外包
+        tel: 010-52901517
+        time: '2020091513455151'
+      sign: 2525c169af995f6c731b1273a8f6b4b2
+      time: 2020091513455151
+      reqId: 2020091513455151-7HDD7FNDBNWLML0E
+      productId: WEAINDEXV2
+  expected:
+    response:
+      data:
+        wealthScore: null
+      status: 200
+      msg: success
+
+
+
+- case: 7.风险分CR尊享版V9.0.2-C9CFPV2
+  http:
+    method: POST
+    path: /api/product
+    headers:
+      Content-Type: application/json
+    params:
+      instId: gy-test
+      data:
+        phone: 50a2d00b5d6cd2b4d176a6d492c2d8e2
+        encryptionType: md5
+        id: 6205ba4c38aa77eb6f01c30a99db9f3e
+        phoneType: phone_md5
+        idNumber: d3351227aa49e2a437f2404c53e63087
+        idNumberType: idNumber_md5
+        modelCode: 111111
+        enterprise: 融慧金科金融服务外包
+        tel: 010-52901517
+        time: '2020091513455151'
+      sign: ce04774938e5e6bb97912be8a9e28a3d
+      time: 2020091513455151
+      reqId: 2020091513455151-7HDD7FNDBNWLML0E
+      productId: C9CFPV2
+  expected:
+    response:
+      data:
+        ficoScore: null
+      status: 200
+      msg: success
+
+
+- case: 8.风险分CR尊享版V9.0.1-C9CFPV1
+  http:
+    method: POST
+    path: /api/product
+    headers:
+      Content-Type: application/json
+    params:
+      instId: gy-test
+      data:
+        phone: 50a2d00b5d6cd2b4d176a6d492c2d8e2
+        encryptionType: md5
+        id: 6205ba4c38aa77eb6f01c30a99db9f3e
+        phoneType: phone_md5
+        idNumber: d3351227aa49e2a437f2404c53e63087
+        idNumberType: idNumber_md5
+        modelCode: 111111
+        enterprise: 融慧金科金融服务外包
+        tel: 010-52901517
+        time: '2020091513455151'
+      sign: 5326c2ec30226023d4e0d3586c387e49
+      time: 2020091513455151
+      reqId: 2020091513455151-7HDD7FNDBNWLML0E
+      productId: C9CFPV1
+  expected:
+    response:
+      data:
+        ficoScore: null
+      status: 200
+      msg: success
+
+- case: 9.企业主信息核验-ZCXQYZ
+  http:
+    method: POST
+    path: /api/product
+    headers:
+      Content-Type: application/json
+    params:
+      instId: gy-test
+      data:
+        phone: 50a2d00b5d6cd2b4d176a6d492c2d8e2
+        encryptionType: md5
+        id: 6205ba4c38aa77eb6f01c30a99db9f3e
+        phoneType: phone_md5
+        idNumber: d3351227aa49e2a437f2404c53e63087
+        idNumberType: idNumber_md5
+        modelCode: 111111
+        enterprise: 融慧金科金融服务外包
+        tel: 010-52901517
+        time: '2020091513455151'
+      sign: 3d1735c4b308f5e96fc3a89c0af780c5
+      time: 2020091513455151
+      reqId: 2020091513455151-7HDD7FNDBNWLML0E
+      productId: ZCXQYZ
+  expected:
+    response:
+      status: 200
+      msg: success
+
+
+- case: 10.风险分CR优享版V9.0-CDTV9
+  http:
+    method: POST
+    path: /api/product
+    headers:
+      Content-Type: application/json
+    params:
+      instId: gy-test
+      data:
+        phone: 50a2d00b5d6cd2b4d176a6d492c2d8e2
+        encryptionType: md5
+        id: 6205ba4c38aa77eb6f01c30a99db9f3e
+        phoneType: phone_md5
+        idNumber: d3351227aa49e2a437f2404c53e63087
+        idNumberType: idNumber_md5
+        modelCode: 111111
+        enterprise: 融慧金科金融服务外包
+        tel: 010-52901517
+        time: '2020091513455151'
+      sign: c74dd7629850db34766af6d5a7907356
+      time: 2020091513455151
+      reqId: 2020091513455151-7HDD7FNDBNWLML0E
+      productId: CDTV9
+  expected:
+    response:
+      data:
+        ficoScore: null
+      status: 200
+      msg: success
+
+- case: 11.企业信息核验-QYXXHY
+  http:
+    method: POST
+    path: /api/product
+    headers:
+      Content-Type: application/json
+    params:
+      instId: gy-test
+      data:
+        phone: 50a2d00b5d6cd2b4d176a6d492c2d8e2
+        encryptionType: md5
+        id: 6205ba4c38aa77eb6f01c30a99db9f3e
+        phoneType: phone_md5
+        idNumber: d3351227aa49e2a437f2404c53e63087
+        idNumberType: idNumber_md5
+        modelCode: 111111
+        enterprise: 融慧金科金融服务外包
+        tel: 010-52901517
+        time: 2020091513455151
+      sign: 8a76e3eb8e9549dcccae7265573aabbe
+      time: 2020091513455151
+      reqId: 2020091513455151-7HDD7FNDBNWLML0E
+      productId: QYXXHY
+  expected:
+    response:
+      status: 200
+      msg: success
