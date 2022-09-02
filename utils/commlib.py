@@ -49,6 +49,8 @@ def get_test_data(test_data_path):
         print(case)
         print("------http---------")
         print(http)
+        print("----------http[0]['params']----------------")
+        print(http[0]["params"],type(http[0]["params"]))#字典
         print("------expected-------")
         print(expected)
     parameters = zip(case, http, expected)
